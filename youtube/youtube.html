@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+*{box-sizing:border-box;}
+
+body{
+	font-family:arial;
+	background:#fff;
+	margin:0;
+	padding:40px;
+}
+
+
+.flex{
+	display:flex;
+	width:100%;
+}
+.jcsb{justify-content:space-between;}
+.aic{align-items: center;}
+
+
+.box1{width:60%;}
+.box2{width:calc(40% - 40px);}
+
+
+.video{
+	height:400px;
+	background:#eee
+}
+.title{
+	font-size:25px;
+	padding:25px 0;
+}
+
+
+.round{
+	height:50px;
+	width:50px;
+	border-radius:50%;
+	background:#eee;
+	margin:8px;
+}
+
+
+.subs{
+	flex-grow:3;
+}
+
+.subs button{
+	background:#f22;
+	color:#fff;
+	font-weight:bold;
+	padding:12px 30px;
+	border: none;
+}
+
+
+.description{
+	height:150px;
+	background:#eee;
+	margin-top:30px;
+}
+
+
+
+/*style for right panel*/
+.child{height:150px;background:#eee;margin-top:10px;}
+.child:first-child{margin-top:0;}
+
+</style>
+
+
+
+
+
+<div class="flex jcsb">
+
+	<!--left side panel-->
+	<div class="box1">
+		
+		<div class="video"></div>
+		<div class="title">
+			This is video title
+		</div>
+
+		<div class="flex jcsb aic">
+			<div class="round"></div>
+			<div class="subs">
+				<button>SUBSCRIBE</button>
+			</div>
+
+			<div class="round"></div>
+			<div class="round"></div>
+			<div class="round"></div>
+		</div>
+
+		<div class="description"></div>
+	</div>
+	<!--left side panel-->
+
+
+
+	<!--right side panel-->
+	<div class="box2">
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+	</div>
+	<!--right side panel-->
+
+</div>
+
+
+</body>
+</html>
