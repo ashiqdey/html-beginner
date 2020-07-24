@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+*{box-sizing:border-box;}
+
+body{
+	font-family:arial;
+}
+
+ul{padding:0;margin:0;}
+li{list-style:none;}
+
+.parent,
+ul li li{padding:12px;}
+
+
+#menu{
+	display:flex;
+	position:fixed;
+	top:0;
+	right:0;
+}
+
+#menu>li{width:150px;}
+
+.parent{background:#eee;}
+
+#menu li ul{
+	display:none;
+	background:#d6f3ff;
+}
+
+
+#menu li:hover .parent{background:#4400ff;color:#fff;}
+
+#menu li:hover ul{display:block;}
+#menu li li:hover{background:#13f0d6}
+</style>
+
+
+<ul id="menu">
+	<li>
+		<div class="parent">Home</div>
+
+		<ul>
+			<li>Home child</li>
+			<li>Home child</li>
+			<li>Home child</li>
+		</ul>
+	</li>
+	<li>
+		<div class="parent">About</div>
+
+		<ul>
+			<li>About child</li>
+			<li>About child</li>
+			<li>About child</li>
+		</ul>
+	</li>
+	<li>
+		<div class="parent">Contact</div>
+
+		<ul>
+			<li>Contact child</li>
+			<li>Contact child</li>
+			<li>Contact child</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+<div style="height:2000px">
+	This is a long div<br><br><br><br><br><br><br><br><br><br><br><br>
+	This is a long div<br><br><br><br><br><br><br><br><br><br><br><br>
+	This is a long div<br><br><br><br><br><br><br><br><br><br><br><br>
+	This is a long div<br><br><br><br><br><br><br><br><br><br><br><br>
+	This is a long div<br><br><br><br><br><br><br><br><br><br><br><br>
+	This is a long div<br><br><br><br><br><br><br><br><br><br><br><br>
+	This is a long div<br><br><br><br><br><br><br><br><br><br><br><br>
+	This is a long div<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+</body>
+</html>

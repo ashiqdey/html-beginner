@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+*{box-sizing:border-box;}
+
+body{
+	font-family:arial;
+}
+
+ul{padding:0;margin:0;}
+li,
+.parent{list-style:none;padding:12px;}
+
+
+#menu{width:150px;}
+
+.parent{background:#eee;}
+
+#menu li ul{
+	display:none;
+	background:#ffc;
+}
+#menu li:hover ul{display:block;}
+#menu li li:hover{background:#cfc}
+</style>
+
+
+<ul id="menu">
+	<li>
+		<div class="parent">Home</div>
+
+		<ul>
+			<li>Home child</li>
+			<li>Home child</li>
+			<li>Home child</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+</body>
+</html>
