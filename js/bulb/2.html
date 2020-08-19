@@ -1,0 +1,27 @@
+
+
+
+<style type="text/css">
+	img{width:80px;}
+</style>
+
+
+
+<div>
+	<img src="bulb.svg" id="bulb">
+</div>
+
+
+<button onclick="on()">on</button>
+<button onclick="off()">off</button>
+
+
+<script>
+function on() {
+	document.getElementById('bulb').src= 'bulb_on.svg';
+}
+
+function off() {
+	document.getElementById('bulb').src= 'bulb.svg';
+}
+</script>

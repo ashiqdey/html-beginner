@@ -1,0 +1,26 @@
+<style type="text/css">
+div{font-size:50px;text-align:center;margin-top:100px;color:#666;}
+</style>
+
+
+<div id="timer">10:00</div>
+
+
+<script>
+//calll timer_function every 1 second
+var timer=setInterval(timer_function,1000);
+var min=10;
+var sec=0;
+
+function timer_function(){
+  sec--;
+  if(sec<=0){
+    min--;
+    sec=59;
+  }
+
+  document.getElementById('timer').innerHTML = min+":"+sec;
+}
+</script>
+
+

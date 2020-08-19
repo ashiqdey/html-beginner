@@ -1,0 +1,36 @@
+<style type="text/css">
+button{padding:10px 20px;background:#0085ff;color:#fff;border:0;}
+
+#text{border:1px solid #ddd;padding:10px;margin:10px;height:30px;}
+</style>
+
+
+
+<button class="btn">1</button>
+<button class="btn">+</button>
+<button class="btn">2</button>
+<button class="btn">3</button>
+<button class="btn">4</button>
+<button class="btn">5</button>
+<button onclick="cleartext()">Clear</button>
+
+<input type='text' id="text">
+
+
+<script>
+var btn = document.getElementsByClassName("btn");
+
+
+for (var i = 0; i < btn.length; i++) {
+    btn[i].addEventListener('click', myfunction, false);
+}
+
+function myfunction(){
+	document.getElementById('text').value +=this.innerHTML;
+}
+
+
+function cleartext(){
+	document.getElementById('text').value ="";
+}
+</script>

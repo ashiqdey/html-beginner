@@ -1,0 +1,31 @@
+
+
+<audio id='song' src="song.mp3" controls></audio>
+
+
+<br><br>
+<button onclick="play()">play</button>
+<button onclick="pause()">pause</button>
+<button onclick="speed(0.75)">slow</button>
+<button onclick="speed(1.5)">fast</button>
+
+
+
+
+
+<script>
+function play() {
+	document.getElementById('song').play();
+}
+
+
+function pause() {
+	document.getElementById('song').pause();
+}
+
+
+function speed(s) {
+	document.getElementById('song').playbackRate = s;
+}
+
+</script>

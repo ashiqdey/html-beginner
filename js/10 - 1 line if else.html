@@ -1,0 +1,56 @@
+<style type="text/css">
+*{padding:10px;margin:10px;}
+input{border:1px solid #ddd;}
+</style>
+
+Enter your age
+<input type='number' id="num" value="15">
+
+<button onclick="check()">Check</button>
+<button onclick="check2()">Check 2</button>
+
+
+
+
+
+<script>
+function check() {
+	let age = parseInt(document.getElementById('num').value);
+
+	alert((age>18) ? "adult" : "child");
+}
+
+
+//how 1 line if else works
+/*
+
+LOGIC :
+condition ? if true : else ;
+
+CODE :
+   age>18 ? "adult" : "child"
+
+*/
+
+
+
+
+
+/*
+both the function does exactly the same task
+*/
+function check2() {
+	let age = parseInt(document.getElementById('num').value);
+
+	if(age>18){
+		alert("adult");
+	}
+	else{
+		alert("child");
+	}
+
+}
+
+</script>
+
+

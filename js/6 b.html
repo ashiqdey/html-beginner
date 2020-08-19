@@ -1,0 +1,38 @@
+<style type="text/css">
+*{padding:10px;margin:10px;}
+</style>
+
+
+
+Total marks
+<input type='number' id="total" value="800"><br><br>
+
+Obtained marks
+<input type='number' id="obtained" value="232"><br><br>
+
+<input type='text' id="result1">
+<input type='text' id="result2"><br>
+
+<button onclick="percent()">Calculate percent</button>
+
+
+
+
+<script>
+function percent() {
+	let total = document.getElementById('total').value;
+	total = parseInt(total);
+
+  let obtained = parseInt(document.getElementById('obtained').value);
+
+  //this is display full value
+  document.getElementById('result1').value=((obtained/total)*100)+"%";
+  
+  //this is round off the value
+  document.getElementById('result2').value=(Math.round((obtained/total)*100))+"%";
+}
+
+
+</script>
+
+

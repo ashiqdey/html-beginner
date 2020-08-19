@@ -1,0 +1,51 @@
+<style type="text/css">
+*{padding:10px;margin:10px;}
+input{border:1px solid #ddd;}
+</style>
+
+Enter number > 50
+<input type='number' id="num" value="3">
+
+<button onclick="check()">Check</button>
+
+
+
+
+
+<script>
+function check() {
+	//read value from box 1
+	let num = parseInt(document.getElementById('num').value);
+
+  if(num>50){
+    alert("Perfect");
+  }else{
+
+    //number is < 50 so
+
+    //set the background color as red
+    document.getElementById('num').style.backgroundColor ="#f00";
+    //set trasition to 0s
+    document.getElementById('num').style.transition ="0s";
+
+
+    //remove background color after 1 second
+    //add trasnition  to 3second to make smooth animation
+    setTimeout(
+
+      function(){
+
+        document.getElementById('num').style.backgroundColor ="#fff";
+        document.getElementById('num').style.transition ="3s";
+
+      },1000
+
+    );
+    
+  }
+
+}
+
+</script>
+
+

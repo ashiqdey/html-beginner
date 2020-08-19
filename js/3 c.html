@@ -1,0 +1,39 @@
+
+
+<button onclick="click0()">Onclick</button>
+
+<button id="apple">Apple</button>
+<button id="mango">mango</button>
+<button id="btn3">Button 3</button>
+
+<script>
+
+function click0(){
+	alert("you clicked onclick button");
+}
+
+//method 1
+var btn1 = document.getElementById("apple");
+	btn1.addEventListener("click", clicked1);
+
+function clicked1() {
+  alert("you clicked Apple");
+}
+
+
+
+//second button
+var mango = document.getElementById("mango");
+	mango.addEventListener("click", function(){
+		alert("you clicked mango");
+	});
+
+
+
+//3rd button
+document.getElementById("btn3").addEventListener("click", clicked3);
+
+function clicked3() {
+  alert("you clicked button 3");
+}
+</script>

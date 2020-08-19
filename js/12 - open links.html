@@ -1,0 +1,28 @@
+
+
+
+<button onclick="openlink()">Open link</button>
+<button onclick="openlink2()">Open link as new tab</button>
+<button onclick="openlink3()">open Popup window</button>
+
+
+
+
+
+<script>
+function openlink() {
+	window.location="https://google.com";
+}
+
+
+function openlink2() {
+	window.open('https://google.com', '_blank');
+}
+
+function openlink3() {
+	newwindow=window.open('11 - play pause.html',"new popup",'height=300,width=400');
+}
+
+
+
+</script>

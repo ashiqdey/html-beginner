@@ -1,0 +1,43 @@
+<style type="text/css">
+div{font-size:50px;text-align:center;margin-top:100px;color:#666;}
+</style>
+
+
+<div id="time1"></div>
+<div id="time2"></div>
+
+
+<script>
+//calll timer_function every 1 second
+var timer=setInterval(timer_function,1000);
+
+function timer_function(){
+	let d = new Date();
+
+  document.getElementById('time1').innerHTML = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+
+
+  document.getElementById('time2').innerHTML = ((d.getHours())>12?(d.getHours()-12):d.getHours())+":"+d.getMinutes()+":"+d.getSeconds();
+
+/*
+1 line code
+(d.getHours())>12?(d.getHours()-12):d.getHours()
+
+
+multi line code
+if(d.getHours()>12){
+	d.getHours()-12
+	
+	//13 will become 1
+	//14 will become 2
+	//23 will become 11
+}
+else{
+	d.getHours()
+}
+
+*/
+}
+</script>
+
+

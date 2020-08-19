@@ -1,0 +1,24 @@
+
+<img src="bulb.svg" id="bulb" width="120">
+
+<label>
+	<input type="checkbox" name="switch" onchange="on_off()">
+	ON / OFF
+</label>
+
+
+
+<script>
+function on_off() {
+	const bulb = document.getElementById('bulb');
+	let src = bulb.src.split('/').pop();
+
+	//console.log(src);
+
+	if(src == 'bulb_on.svg'){
+		bulb.src='bulb.svg';
+	}else{
+		bulb.src='bulb_on.svg';
+	}
+}
+</script>

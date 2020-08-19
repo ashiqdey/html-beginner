@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+
+<div id="demo"></div>
+<button onclick="function1()">Add text</button>
+<button onclick="function2()">Append text</button>
+
+<script>
+//this function will add the text to div having ID=demo
+function function1() {
+  document.getElementById('demo').innerHTML="You clicked button";
+}
+
+
+//this function will keep the old text + it will add new text to the div haing ID=demo
+function function2() {
+  document.getElementById('demo').innerHTML +="<br>You clicked button";
+}
+</script>
+
+
+
+</body>
+</html>

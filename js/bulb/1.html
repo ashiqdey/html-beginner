@@ -1,0 +1,24 @@
+
+
+
+<style type="text/css">
+	#star{font-size:100px;color:yellow}
+</style>
+
+
+
+<div id="star">&star;</div>
+
+<button onclick="on()">on</button>
+<button onclick="off()">off</button>
+
+
+<script>
+function on() {
+	document.getElementById('star').innerHTML= '&starf;';
+}
+
+function off() {
+	document.getElementById('star').innerHTML= '&star;';
+}
+</script>
