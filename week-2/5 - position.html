@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+*{box-sizing:border-box;}
+body{padding:20px;}
+
+/*ignore this line*/
+div{height:100px;width:200px;color:#fff;}
+
+.static{
+	background:#00ecd8;
+	position:static;
+
+	top:20px;
+	left:50px;
+}
+.relative{
+	background:#1a00c6;
+	position:relative;
+
+	top:20px;
+	left:20px;
+}
+.absolute{
+	background:#d800bb;
+	position:absolute;
+
+	right:0;
+	top:40%;
+}
+.fixed{
+	background:#33e900;
+	position:fixed;
+
+	bottom:10px;
+	left:30px;
+}
+.sticky{
+	background:#ff8000;
+	position:sticky;
+
+	top:0;
+}
+
+</style>
+
+<div class="static">BOX 1 - static</div>
+<div class="relative">BOX 2 - relative</div>
+<div class="absolute">BOX 3 - absolute</div>
+<div class="fixed">BOX 4 - fixed</div>
+<div class="sticky">BOX 5 - sticky</div>
+
+
+
+<div style="height:800px;"></div>
+<div style="height:800px;"></div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<style type="text/css">
+button{height:30px;width:30px;background:transparent;border-radius:30px;border:1px solid #555;}
+
+
+
+ul ol{color:#f70;width:200px;padding:10px;}
+ul ol:hover{background:rgba(0,0,0,0.1);}
+ul ol:nth-child(3){background:red;color:white}
+</style>
+
+<button>1</button>
+<ul>
+	<ol>Home</ol>
+	<ol>About</ol>
+	<ol>Product</ol>
+	<ol>Contact us</ol>
+</ul>
+
+
+
+<button>2</button>
+<style type="text/css">
+#menu li{color:#f70;width:200px;padding:10px;}
+#menu .active{background:red;color:white}
+#menu .active ~ li{background:rgba(255,0,0,0.2);}
+</style>
+
+<ul id="menu">
+	<li>Home</li>
+	<li class='active'>About</li>
+	<li>Product</li>
+	<li>Contact us</li>
+</ul>
+
+
+
+
+<button>3</button>
+<style type="text/css">
+#type3 li{color:#f70;width:200px;padding:10px;background:#eee;list-style:none;}
+#type3 li:nth-child(even){background:blue;color:white}
+</style>
+
+<ul id="type3">
+	<li>1 Home</li>
+	<li>2 About</li>
+	<li>3 Product</li>
+	<li>4 Contact us</li>
+	<li>5 More</li>
+</ul>
+
+
+
+
+<button>4</button>
+<style type="text/css">
+#type4 li{color:#f70;width:200px;padding:10px;background:#eee;list-style:none;}
+#type4 li:nth-child(2),
+#type4 li:nth-child(5){background:#73f;color:white}
+</style>
+
+<ul id="type4">
+	<li>1 Home</li>
+	<li>2 About</li>
+	<li>3 Product</li>
+	<li>4 Contact us</li>
+	<li>5 More</li>
+</ul>
+
+
+
+</body>
+</html>

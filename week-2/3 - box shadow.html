@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+*{box-sizing:border-box;}
+body{padding:20px;}
+
+/*ignore this line*/
+div{margin:20px;background:white; border:1px solid #ddd; padding:50px 0;text-align:center;width:200px;border-radius:10px;display:inline-block;}
+
+
+
+/*start from here*/
+.bs10{box-shadow:0 0 10px 0 rgba(0,0,0,0.2)}
+.bs20{box-shadow:0 0 20px 0 rgba(0,0,0,0.2)}
+
+.bsx10{box-shadow:10px 0 10px 0 rgba(0,0,0,0.2)}
+.bsy10{box-shadow:0 10px 10px 0 rgba(0,0,0,0.2)}
+
+</style>
+
+
+
+
+
+
+<div class="bs10">shadow 10px</div>
+<div class="bs20">shadow 20px</div>
+
+<div class="bsx10">shadow 10px in X axis</div>
+<div class="bsy10">shadow 10px in Y axis</div>
+
+
+
+
+<br>
+<style type="text/css">
+.bsxy10{box-shadow:10px 10px 10px 0 rgba(0,0,0,0.2)}
+.bsxy10_2{box-shadow:-10px -10px 10px 0 rgba(0,0,0,0.2)}
+</style>
+
+<div class="bsxy10">shadow BOTH axis</div>
+<div class="bsxy10_2">shadow BOTH axis 2</div>
+
+
+
+<br>
+<style type="text/css">
+div.no_radius{border-radius:0;}
+
+.bss{box-shadow:8px 8px 0 0 rgba(0,0,0,0.1)}
+.bss_2{box-shadow:-8px -8px 0 0 rgba(0,0,0,0.1)}
+</style>
+<div class="no_radius bss">solid shadow</div>
+<div class="no_radius bss_2">solid shadow 2</div>
+
+
+
+<br>
+<style type="text/css">
+div.no_radius{border-radius:0;}
+
+
+.bsh{
+	box-shadow:0 0 0 0 rgba(0,0,0,0.1);
+	transition:0.4s;
+}
+.bsh:hover{
+	box-shadow:12px 12px 0 0 rgba(0,0,0,0.1)
+}
+
+.bsh_2:hover{
+	box-shadow:-12px -12px 0 0 rgba(0,0,0,0.1)
+}
+</style>
+<div class="no_radius bsh">solid shadow</div>
+<div class="no_radius bsh bsh_2">solid shadow 2</div>
+
+
+
+
+
+<br><br>
+<style type="text/css">
+button{background:#0088ff;color:white;border-radius:25px;border:0;padding:12px 30px;cursor:pointer;transition:0.4s}
+button:hover{box-shadow:0 0 0 10px #a5ffee}
+
+</style>
+
+<button>COOL BUTTON</button>
+
+</body>
+</html>

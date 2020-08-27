@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+*{box-sizing:border-box;}
+body{padding:20px;}
+
+/*ignore this line*/
+div{margin:20px;background:#08f; padding:50px 0;text-align:center;width:200px;border-radius:20px;display:inline-block;color:#fff}
+
+
+
+/*start from here*/
+.br20{border-radius:20px}
+.br20_d1{border-radius:20px 0}
+.br20_d2{border-radius:0 20px}
+
+.brtl{border-radius:20px 0 0 0}
+.brtr{border-radius:0 20px 0 0}
+.brbr{border-radius:0 0 20px 0}
+.brbl{border-radius:0 0 0 20px}
+
+
+</style>
+
+
+
+
+<div class="br20">border-radius 20px</div>
+<div class="br20_d1">top-left, bottom-right</div>
+<div class="br20_d2">top-right, bottom-left</div>
+
+<br>
+<div class="brtl">top left</div>
+<div class="brtr">top right</div>
+
+<div class="brbr">bottom right</div>
+<div class="brbl">bottom left</div>
+
+
+
+<br>
+<style type="text/css">
+.br_m1,
+.br_m2{width:120px;}
+
+
+.br_m1{border-radius:80px 80px 80px 0}
+.br_m2{border-radius:0 80px 80px 80px}
+
+</style>
+
+<div class="br_m1">M 1</div>
+<div class="br_m2">M 2</div>
+
+
+
+<!--how can we use border-radius -->
+
+<style type="text/css">
+.tr{text-align:right;}
+.tc{text-align:center;}
+
+.chat{
+	width:100%;
+	margin:0;
+	border-radius:0;
+	padding:20px;
+	background:#e5e5e5;
+	font-family:'segoe ui',arial;
+}
+
+.holder{
+	width:300px;
+	padding:10px;
+	background:#fff;
+	text-align:left;
+}
+
+
+.holder p{margin:0;}
+
+
+
+/*--chats--*/
+
+.holder span{
+	color:#555;
+	background:#ddd;
+	padding:10px 13px;
+	display:inline-block;
+	margin-top:4px;
+}
+
+.holder .tr span{
+	background:#004af6;
+	color:#fff;
+}
+
+
+
+/*--inputs--*/
+.c_s{border-radius:20px 20px 20px 5px}
+.c_m{border-radius:5px 20px 20px 5px}
+.c_e{border-radius:5px 20px 20px 20px}
+
+.tr .c_s{border-radius: 20px 20px 5px 20px }
+.tr .c_m{border-radius:20px 5px  5px 20px}
+.tr .c_e{border-radius: 20px 5px 20px  20px }
+
+
+
+
+
+/*--inputs--*/
+.input{
+	padding:10px;
+	display:flex;
+}
+.box{
+	height:40px;
+	background:#ddd;
+	width:calc(100% - 50px);
+	border-radius:20px;
+	margin-right:10px;
+}
+.btn{
+	height:40px;
+	width:40px;
+	background:#ddd;
+	border-radius:20px;
+}
+.btn:hover{
+	background:#004af6;
+}
+</style>
+
+
+<h2 class="tc">USAGE</h2>
+<div class="chat">
+	<div class="holder">
+		<p class="tl"><span class="c_s">Hi</span></p>
+		<p class="tl"><span class="c_m">How are you doing</span></p>
+		<p class="tl"><span class="c_e">Good??</span></p>
+
+		<p class="tr"><span class="c_s">Hello</span></p>
+		<p class="tr"><span class="c_e">Jhon, m fine</span></p>
+
+		<br><br>
+		<p class="input">
+			<span class="box" contenteditable="true"></span>
+			<span class="btn"></span>
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
